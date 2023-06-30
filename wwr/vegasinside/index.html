@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="./images/246cfe4f9e0044ccb68f99067251e4d3.png" alt="Vegas Inside">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Things.html">Things Around Town</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <div class="title-home">
+            <h2>Vegas Inside</h2>
+            <p>Hello everyone and welcome to everyone to the trick and tips from Vegas Inside. </p>
+        </div>
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 2</div>
+              <img src="./images/alex-vegas-PVQmouL31MY-unsplash.jpg" style="width:100%">
+              <div class="text">Vegas Inside</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 2</div>
+              <img src="./images/pexels-david-vives-2837909.jpg" style="width:100%">
+              <div class="text">Vegas Inside</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        <div class="home-grid">
+            <section class="tip">
+                <h3>Uncover hidden secrets of Las Vegas </h3>   
+                <p>        Are you ready to discover the hidden side of Las Vegas? Welcome to Vegas Inside, your premier source for exclusive insights, off-the-beaten-path adventures, and the untold stories that make Sin City truly one-of-a-kind. Step away from the neon lights and delve into the heart and soul of this captivating city.
+                </p>
+            </section>
+
+            <section class="tip">
+                <h3>Unveiling the Veiled:</h3>   
+                <p> Las Vegas is known for its glitz and glamour, but beneath the surface lies a world of intrigue and mystery. At Vegas Inside, we take you beyond the typical tourist experience and peel back the layers to reveal the secrets that locals hold dear. From tucked-away speakeasies and underground shows to hidden art installations and secret dining experiences, we'll show you a Vegas that few have had the privilege to explore.
+                </p>
+            </section>
+
+            <section class="tip">
+                <h3>Authentic Insider Perspectives:</h3>   
+                <p>Our team of passionate Vegas insiders is deeply connected to the pulse of the city. With years of experience living, working, and immersing ourselves in the Las Vegas culture, we bring you authentic insider perspectives that go beyond the glossy surface. We'll introduce you to the fascinating personalities, the vibrant communities, and the untold stories that make Las Vegas an extraordinary destination.</p>
+            </section>
+
+            <section class="tip">
+                <h3>Unique Experiences:</h3>   
+                <p>Vegas Inside is your gateway to extraordinary experiences that go beyond the typical tourist fare. Want to learn the art of mixology from a world-renowned bartender? We've got you covered. Interested in exploring the mesmerizing desert landscapes just beyond the city limits? We'll guide you there. From exclusive access to behind-the-scenes tours and VIP experiences to niche activities and local favorites, we'll help you create unforgettable memories that will last a lifetime.</p>
+              
+            </section>
+
+            <section class="tip">
+                <h3>Insider Tips and Local Recommendations:</h3>   
+                <p>Our insider knowledge doesn't stop at hidden gems and unique experiences. We'll also provide you with practical tips and local recommendations to enhance your Vegas adventure. Whether you're seeking the best happy hour deals, the most scenic hiking trails, or the finest off-Strip dining spots, our curated insights will ensure that you make the most of your time in Las Vegas.</p>
+             
+            </section>
+
+            <section class="tip">
+                <h3>Constant Exploration:</h3>   
+                <p>Las Vegas is a city that never stands still, and neither do we. We are constantly exploring, seeking out new discoveries, and updating our knowledge to keep you at the forefront of the Vegas scene. With Vegas Inside, you'll stay informed about the latest openings, upcoming events, and emerging trends that shape the ever-evolving landscape of this vibrant city.</p>
+              
+            </section>
+
+            <section class="tip">
+                <h3>Uncover the Hidden Gems of Las Vegas: </h3>   
+                <p>Discover a different side of the city with Vegas Inside. From off-the-beaten-path attractions to local secrets, we bring you the insider's guide to experiencing the best of Las Vegas beyond the famous Strip.</p>
+            
+            </section>
+
+            <section class="tip">
+                <h3>Insider Discounts and Offers:</h3>   
+                <p>Unlock exclusive discounts and offers through Vegas Inside. Take advantage of special promotions and deals on hotels, dining, entertainment, and more, making your Las Vegas experience even more affordable and rewarding.</p>
+            </section>
+        </div>
+        <footer>
+            <p>Vegas Inside &copy; 2023 - Alex Myers </p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div> 
+</body>
+</html>
