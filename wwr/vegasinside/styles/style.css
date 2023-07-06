@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap');
 
 /* NAV AND HEADER */
 nav a{
     text-align:center;
-    color:#000;
+    color:#A43312;
     text-decoration:none;
     padding: 35px;
 
@@ -21,7 +21,7 @@ nav {
 width:80px;
 }
 header {
-    background-color:#8AB0AB;
+    background-color:#E7c24f;
     display: grid;
     grid-template-columns: 150px auto;
 }
@@ -33,7 +33,7 @@ nav a:hover {
 /* BODY */
 .title-home {
     text-align: center;
-    font-family: Kalam;
+    font-family: pacifico;
 }
 .home-picture {
     width: 50%;
@@ -70,7 +70,7 @@ nav a:hover {
     padding: 10px;
 }
 body {
-    font-family: Poppins, Helvetica, sans-serif;
+    font-family: Pacifico;
 }
 /* SLIDESHOW */
 * {box-sizing:border-box}
@@ -163,8 +163,8 @@ body {
 
 /* FOOTER */
 footer {
-    background-color:#8AB0AB;
-    color:#000;
+    background-color:#E7c24f;
+    color:#A43312;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
@@ -172,7 +172,7 @@ footer {
     align-items: center;
 }
 footer a {
-    color:#000;
+    color:#A43312;
     text-decoration:none;
 }
 
@@ -194,7 +194,7 @@ footer .social img {
 /* FAQ PAGE*/
 .title-faq {
   text-align: center;
-  font-family: Kalam;
+  font-family: Pacifico;
 }
 .faq-picture {
   width: 50%;
@@ -236,8 +236,8 @@ footer .social img {
 
 /* ABOUT US PAGE */
 footer {
-  background-color:#8AB0AB;
-  color:#000;
+  background-color:#E7c24f;
+  color:#A43312;
   padding: 25px 50px;
   margin-top: 200px;
   display: flex;
@@ -245,7 +245,7 @@ footer {
   align-items: center;
 }
 footer a {
-  color:#000;
+  color:#A43312;
   text-decoration:none;
 }
 
@@ -266,7 +266,7 @@ footer .social img {
 
 .title-aboutus {
 text-align: center;
-font-family: Kalam;
+font-family: Bebas Neue;
 }
 .aboutus-picture {
 width: 25%;
