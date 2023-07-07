@@ -37,7 +37,7 @@ nav a:hover {
 }
 .home-picture {
     width: 50%;
-    border: 10px solid #26413C;
+    border: 10px solid #396E94;
 }
 .home-grid {
     display: grid;
@@ -215,7 +215,7 @@ footer .social img {
   margin-top: 70px;
 }
 .question{
-  background: #8AB0AB;
+  background: #396E94;
   margin: 30px;
   vertical-align: middle;
   width: 70%;
@@ -270,7 +270,7 @@ font-family: Bebas Neue;
 }
 .aboutus-picture {
 width: 25%;
-border: 10px solid #26413C;
+border: 10px solid #396E94;
 }
 .aboutus-grid {
 display: grid;
