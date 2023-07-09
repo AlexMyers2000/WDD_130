@@ -85,6 +85,30 @@ button {
 .moveDown {
     margin-top: 3em;
 }
+
+    .photo-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+    .left-photo,
+    .right-photo {
+        width: 300px;
+        height: 300px;
+    }
+
+    p {
+        margin-top: 1em;
+    }
+
+    form-paragraph {
+        padding: 1em;
+        text-align: center;
+    }
+</style>
+
     </style>
 </head>
 <body>
@@ -99,26 +123,39 @@ button {
         </nav>
     </header>
     <main>
-        <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-            <ul>
-                <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" />
-                </li>
-                <li>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_email" />
-                </li>
-                <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">Send your message</button>
-                </li>
-            </ul>
-        </form>
+        <div class="photo-container">
+            <img class="left-photo" src="./images/pexels-enric-cruz-lópez-6039244.jpg" alt="Left Photo" width="300" height="200">
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" />
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_email" />
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </form>
+            <img class="right-photo" src="./images/pexels-paul-ijsendoorn-444964.jpg" alt="Right Photo" width="300" height="200">
+        </div>
+    
+        <p>We would love to hear from you! At Vegas Inside, we value your feedback, suggestions, and inquiries. If you have any questions or need assistance, our dedicated team is ready to assist you. Feel free to reach out to us through the following contact information:
+            <br>
+            Email: info@vegasinside.com
+            Phone: +1 (555) 123-4567
+            <br>
+            Our office hours are Monday to Friday, 9:00 AM to 6:00 PM (PST). We strive to respond to all inquiries within 24 hours. Whether you have a specific query about our services or simply want to share your Vegas experience, we're here to listen. Thank you for choosing Vegas Inside, and we look forward to connecting with you soon!</p>
+    </main>
+    
+        
     </main>
     <footer>
         <p>Vegas Inside  &copy; 2023 - Alex Myers</p>
